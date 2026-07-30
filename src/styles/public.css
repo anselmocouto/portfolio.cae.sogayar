@@ -516,3 +516,13 @@
     transition: none;
   }
 }
+.pc-link-pdf {
+  background: var(--slate, #3F4A5C);
+  color: #fff !important;
+  border-radius: 8px;
+  padding: 8px 14px;
+  border-bottom: none !important;
+}
+.pc-link-pdf:hover {
+  background: var(--slate-h, #2F3949);
+}

@@ -104,7 +104,10 @@ export default function PublicLayout() {
             <NavLink to="/contato" className={navClass}>
               Contato
             </NavLink>
-          </div>
+             <a href="/relatorio" target="_blank" rel="noopener" className="pc-link pc-link-pdf">
+              Baixar PDF
+            </a>
+            </div>
         </div>
       </nav>
 

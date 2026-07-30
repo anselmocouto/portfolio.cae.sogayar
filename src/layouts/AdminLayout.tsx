@@ -55,6 +55,25 @@ export default function AdminLayout() {
             </span>
           </NavLink>
         ))}
+        <div className="ad-pdf-box">
+          <span className="ad-pdf-titulo">Relatório PDF</span>
+          <button
+            type="button"
+            className="ad-pdf"
+            onClick={() => window.open('/relatorio', '_blank')}
+            title="Versão oficial: apenas projetos publicados"
+          >
+            Gerar portfólio
+          </button>
+          <button
+            type="button"
+            className="ad-pdf ad-pdf-ghost"
+            onClick={() => window.open('/relatorio?rascunhos=1', '_blank')}
+            title="Versão de trabalho: inclui rascunhos marcados"
+          >
+            + rascunhos
+          </button>
+        </div>
         <div className="ad-side-foot">
           {email ?? '—'}
           <button

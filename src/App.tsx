@@ -14,6 +14,7 @@ import ProjetoForm from '@/pages/admin/ProjetoForm'
 import Categorias from '@/pages/admin/Categorias'
 import Mensagens from '@/pages/admin/Mensagens'
 import Configuracoes from '@/pages/admin/Configuracoes'
+import Relatorio from '@/pages/Relatorio'
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
             <Route path="/projeto/:id" element={<ProjectDetail />} />
           </Route>
           <Route path="/admin/login" element={<Login />} />
+          <Route path="/relatorio" element={<Relatorio />} />
 
           {/* autenticadas */}
           <Route element={<RequireAuth />}>

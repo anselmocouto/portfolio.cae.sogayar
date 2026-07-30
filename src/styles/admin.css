@@ -393,3 +393,44 @@
     display: none;
   }
 }
+/* Relatório PDF (sidebar) */
+.ad-pdf-box {
+  padding: 12px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ad-pdf-titulo {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 0 2px;
+}
+.ad-pdf {
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--slate);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-control);
+  cursor: pointer;
+  font: 600 12.5px 'Inter', sans-serif;
+  padding: 9px 10px;
+  transition: background 0.12s;
+}
+.ad-pdf:hover {
+  background: var(--slate-h);
+}
+.ad-pdf-ghost {
+  background: #fff;
+  color: var(--sub);
+  border: 1px solid var(--line);
+  font-weight: 500;
+}
+.ad-pdf-ghost:hover {
+  background: #F0F1F4;
+  color: var(--ink);
+}
